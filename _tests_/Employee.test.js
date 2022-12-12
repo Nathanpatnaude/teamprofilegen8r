@@ -43,7 +43,7 @@ describe ("Employee", () => {
     })
 
     describe ("getEmail", () =>{
-        it("should recieve email as employee.email", () => {
+        it("should return employee.email", () => {
             const email = "Nathanpatnaude@gmail.com"
             const employeeObj =  new Employee("Nathan", 13, email);
             expect(employeeObj.getEmail()).toEqual(email);
@@ -51,7 +51,7 @@ describe ("Employee", () => {
     })
 
     describe ("getRole", () =>{
-        it("should recieve email as employee.email", () => {
+        it("should return employee.email", () => {
             const employeeObj =  new Employee("Nathan", 13, "Nathanpatnaude@gmail.com");
             expect(employeeObj.getRole()).toEqual("Employee");
         })
