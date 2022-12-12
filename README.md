@@ -28,7 +28,7 @@ THEN I exit the application, and the HTML is generated
 
 
 
-install inquirer
+<!-- install inquirer -->
 class manager -----  *name *id *email *officeNumber
 subclass engineer -- *name *id *email *githubusername
 sublass intern ----- *name *id *email *school
@@ -39,3 +39,16 @@ while answer != done
 prompt new teammate list (engineer intern done) => prompt engineer or intern question set
 send array to gnerate html
 writefile to ./dist
+
+
+├── __tests__/             //jest tests
+│   ├── Employee.test.js
+│   ├── Engineer.test.js
+│   ├── Intern.test.js
+│   └── Manager.test.js
+├── dist/                  // rendered output (HTML) and CSS style sheet      
+├── lib/                   // classes
+├── src/                   // template helper code 
+├── .gitignore             // indicates which folders and files Git should ignore
+├── index.js               // runs the application
+└── package.json    
