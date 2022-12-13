@@ -230,7 +230,6 @@ Name:`,
 +-------------------+`);
                     }
                 })
-// console.log(teamProfile)
             }
         })
 };
