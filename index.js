@@ -46,7 +46,7 @@ const addManager = () => {
 
         {
             type: 'input',
-            name: 'Email:',
+            name: 'email',
             message: 'Email:',
             validate: email => {
                 let valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
@@ -218,7 +218,19 @@ Name:`,
 +-------------------+`);
                 addEmployee();
             } else {
-console.log(teamProfile)
+                const teamProfileHTML = generateHTML(teamProfile);
+                fs.writeFile('./dist/index.html', teamProfileHTML, err => {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        console.log(`
++-------------------+
+| File Created in:  |
+|'./dist/index.html'|
++-------------------+`);
+                    }
+                })
+// console.log(teamProfile)
             }
         })
 };
