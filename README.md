@@ -25,7 +25,7 @@ It contains:
 - engineer's githubprofile link
 - intern's school name
 
- The HTML file is generated with the user input and created into [./dist/indexhtml(./dist/indexhtml)</br>![team profile Gen8r ui](./assets/teamprofilegen8rui.gif)</br>![team profile Gen8r result](./assets/teamprofilegen8rresult.gif)</br>[The file showing full functionality of the application](./src/profilegen8rlive.mp4)  
+ The HTML file is generated with the user input and created into [./dist/indexhtml(./dist/indexhtml)</br>![team profile Gen8r ui](./assets/TeamProfileGen8rui.png)</br>![team profile Gen8r result](./assets/teamprofilegen8rresult.png)</br></br></br>[CLICK HERE -- The file showing full functionality of the application](https://youtu.be/DGVSRelvf3Q)  
   
 
 
