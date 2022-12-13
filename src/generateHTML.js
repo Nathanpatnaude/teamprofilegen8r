@@ -8,7 +8,7 @@ const generateManager = (manager) => {
         <div class="card-body">
             <ul class="list-group">
                 <li class="list-group-item">ID: ${manager.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</li>
+                <li class="list-group-item">Email: <a href="mailto:${manager.email}">${manager.email}</a></li>
                 <li class="list-group-item">Office#: ${manager.officeNumber}</li>
             </ul>
         </div>
@@ -25,7 +25,7 @@ const generateEngineer = (engineer) => {
         <div class="card-body">
             <ul class="list-group">
                 <li class="list-group-item">ID: ${engineer.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</li>
+                <li class="list-group-item">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
                 <li class="list-group-item">Github: <a href="https://github.com/${engineer.githubUserName}" target="_blank" rel="noopener noreferrer">${engineer.githubUserName}</a></li>
             </ul>
         </div>
@@ -42,7 +42,7 @@ const generateIntern = (intern) => {
         <div class="card-body">
             <ul class="list-group">
                 <li class="list-group-item">ID: ${intern.id}</li>
-                <li class="list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</li>
+                <li class="list-group-item">Email: <a href="mailto:${intern.email}">${intern.email}</a></li>
                 <li class="list-group-item">School: ${intern.school}</li>
             </ul>
         </div>
