@@ -1,13 +1,46 @@
-# teamprofilegen8r
+# Team Profile Gen8r
 
-User Story
+## Table of Contents
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Questions](#questions)
 
+
+## Description
+  
+A node.js application that prompts used from inquirer to obtain a team profile containing a Manager and his team, composed of Engingeers and Interns.
+This application returns a single webpage displaying the TeamProfile in a card HTML format.
+The prompt also validates the user input for the appropriate information in each question.
+
+It contains:
+- employee name
+- employee id
+- employee email
+- manager's officeNumber
+- engineer's githubprofile link
+- intern's school name
+
+ The HTML file is generated with the user input and created into [./dist/indexhtml(./dist/indexhtml)</br>![team profile Gen8r ui](./assets/teamprofilegen8rui.gif)</br>![team profile Gen8r result](./assets/teamprofilegen8rresult.gif)</br>[The file showing full functionality of the application](./src/profilegen8rlive.mp4)  
+  
+
+
+## User Story
+  
+```
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
 SO THAT I have quick access to their emails and GitHub profiles
+```
+  
 
-Acceptance Criteria
-
+## Acceptance Criteria
+  
+``` 
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for my team members and their information
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input
@@ -20,35 +53,30 @@ THEN I am prompted to enter the team manager’s name, employee ID, email addres
 WHEN I enter the team manager’s name, employee ID, email address, and office number
 THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
 WHEN I select the engineer option
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
+THEN I am prompted to enter the engineer’s 
+name, ID,  email, and GitHub username, and I am taken back to the menu
 WHEN I select the intern option
 THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
+```
 
 
+## Installation 
+Run the following commands at the project root directory.</br></br>- `npm init`</br>- `npm install inquirer`
+  
 
-<!-- install inquirer -->
-class manager -----  *name *id *email *officeNumber
-subclass engineer -- *name *id *email *githubusername
-sublass intern ----- *name *id *email *school
-
-
-prompt Manager (array[{0}])   id = 0 += 1
-while answer != done
-prompt new teammate list (engineer intern done) => prompt engineer or intern question set
-send array to gnerate html
-writefile to ./dist
+## Usage 
+Run the following commands at the project root directory</br></br>`node index.js`
 
 
-├── __tests__/             //jest tests
-│   ├── Employee.test.js
-│   ├── Engineer.test.js
-│   ├── Intern.test.js
-│   └── Manager.test.js
-├── dist/                  // rendered output (HTML) and CSS style sheet      
-├── lib/                   // classes
-├── src/                   // template helper code 
-├── .gitignore             // indicates which folders and files Git should ignore
-├── index.js               // runs the application
-└── package.json    
+## Tests
+4 test Files included in './_tests_/'</br>
+All 38 tests pass and can be seen passing the functionality video.</br>
+Run using jest in npm:</br>
+`npm run test`
+
+
+## Questions
+[Nathan Patnaude](mailto:Nathanpatnaude@gmail.com) , [GitHub Account](https://github.com/Nathanpatnaude)<br />
+This Project is on [GitHub](https://github.com/Nathanpatnaude/teamprofilegen8r)
